@@ -5,6 +5,6 @@ dist: focal  # UBuntu 20.04 LTS https://docs.travis-ci.com/user/reference/focal/
 addons:
   apt:
     sources:
-      - ubuntu-toolchain-r-test
+      - sourceline: 'ppa:ubuntu-toolchain-r/test'
     packages:
       - g++-10.2
