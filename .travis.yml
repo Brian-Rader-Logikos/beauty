@@ -2,3 +2,7 @@ language: cpp
 
 dist: focal  # UBuntu 20.04 LTS https://docs.travis-ci.com/user/reference/focal/
 
+script:
+  - mkdir build
+  - cd build
+  - cmake .. -DCMAKE_BUILD_TYPE=Release
