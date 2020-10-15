@@ -1,3 +1,10 @@
 language: cpp
 
 dist: focal  # UBuntu 20.04 LTS https://docs.travis-ci.com/user/reference/focal/
+
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r
+    packages:
+      - g++-10.2
