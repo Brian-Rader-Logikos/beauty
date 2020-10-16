@@ -7,6 +7,8 @@
 
 Beauty is a layer above <a href="https://github.com/boostorg/beast">Boost.Beast</a> which provide facilities to create Http server or client. Beauty allows the creation of synchronous or asynchronous server and client, and adds some signals and timer management based on <a href="https://github.com/boostorg/asio">Boost.Asio</a>
 
+[![Build Status](https://travis-ci.org/Brian-Rader-Logikos/beauty.svg?branch=development)](https://travis-ci.org/Brian-Rader-Logikos/beauty)
+
 ## Features
 - Http or Http/s server or client side
 - Synchronous or Asynchronous API
