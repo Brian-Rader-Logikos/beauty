@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="A Rose" src="https://github.com/dfleury2/beauty/raw/master/docs/rose.png" height="180" />
+  <img alt="A Rose" src="https://github.com/Brian-Rader-Logikos/beauty/raw/development/docs/rose.png" height="180" />
   <br>
   A simple Http server and client above <a href="https://github.com/boostorg/beast">Boost.Beast</a>
 </div>
@@ -183,8 +183,8 @@ Beauty depends Boost.Beast and OpenSsl. You can rely on Conan to get the package
 ### Linux
 
 ```bash
-git clone https://github.com/dfleury2/beauty.git
-cd beauty
+git clone https://github.com/Brian-Rader-Logikos/beauty
+cd development
 mkdir build && cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release
 cmake --build .
@@ -196,7 +196,7 @@ to not use Conan. Hope your the dependencies are found on your Linux.
 
 ### Windows
 ```bash
-git clone https://github.com/dfleury2/beauty.git
+git clone https://github.com/Brian-Rader-Logikos/beauty
 cd beauty
 mkdir build && cd build
 conan install ..
