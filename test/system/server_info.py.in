@@ -1,0 +1,2 @@
+version = "${VERSION}"
+server_path = "${SYSTEM_TEST_SERVER_PATH}"

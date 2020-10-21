@@ -1,2 +1,3 @@
 # Unversioned Python Package requirements
 conan
+pytest

@@ -1,12 +1,9 @@
 language: cpp
+os: linux
 
 dist: focal  # UBuntu 20.04 LTS https://docs.travis-ci.com/user/reference/focal/
 
 install:
   - pip install -r requirements.txt
 
-script:
-  - mkdir build
-  - cd build
-  - cmake .. -DCMAKE_BUILD_TYPE=Release
-  - cmake --build .
+script: ./scripts/build_travis.sh
