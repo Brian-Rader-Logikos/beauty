@@ -5,8 +5,18 @@ dist: focal  # UBuntu 20.04 LTS https://docs.travis-ci.com/user/reference/focal/
 install:
   - pip install -r requirements.txt
 
-script:
-  - mkdir build
-  - cd build
-  - cmake .. -DCMAKE_BUILD_TYPE=Release
-  - cmake --build .
+jobs:
+  include:
+    - stage: "Build"
+      script:
+        - mkdir build
+        - cd build
+        - cmake .. -DCMAKE_BUILD_TYPE=Release
+        - cmake --build .
+    - stage: "Tests"
+      name: "System Tests"
+      if: branch IN (development, release)
+      env:
+        - PYTHONPATH="./build/test/system"
+      script:
+        - pytest ./test/system
