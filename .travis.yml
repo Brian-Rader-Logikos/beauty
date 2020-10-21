@@ -16,7 +16,5 @@ jobs:
     - stage: "Tests"
       name: "System Tests"
       if: branch IN (development, release)
-      env:
-        - PYTHONPATH="./build/test/system"
       script:
-        - pytest ./test/system
+        - PYTHONPATH="build/test/system" pytest ./test/system
