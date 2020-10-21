@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -ev
+
 mkdir -p build
 cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release
