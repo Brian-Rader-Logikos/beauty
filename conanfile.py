@@ -5,7 +5,7 @@ class BeautyConan(ConanFile):
     name            = "beauty"
     description     = "HTTP Server above Boost.Beast"
     version         = "0.1-rc"
-    url             = "https://github.com/dfleury2/beauty"
+    url             = "https://github.com/Brian-Rader-Logikos/beauty"
     license         = "To be defined"
     settings        = "os", "compiler", "build_type", "arch"
     options         = {"shared": [True, False]}

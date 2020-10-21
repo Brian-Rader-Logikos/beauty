@@ -1,0 +1,2 @@
+add_executable(system_test_server test_server.cpp)
+target_link_libraries(system_test_server beauty)
